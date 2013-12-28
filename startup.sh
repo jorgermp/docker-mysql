@@ -11,7 +11,7 @@ if [ ! -f /var/lib/mysql/ibdata1 ]; then
  
 	killall mysqld
 	sleep 10s
-	echo "All ok" > /var/lib/mysql/test
+	echo "All ok" > /var/lib/mysql/start.log
 fi
  
 /usr/bin/mysqld_safe
